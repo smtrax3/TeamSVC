@@ -1,0 +1,9 @@
+Columns:
+id varchar(45) PK 
+pass varchar(45) 
+name varchar(45) 
+email varchar(45) 
+phone varchar(45) 
+address varchar(45) 
+address2 varchar(45) 
+recommender varchar(45)
