@@ -1,0 +1,75 @@
+부모글번호 -> 해당 글에대한 댓글을 검색할때 사용할 컬럼
+댓글번호 -> 댓글 번호
+그룹번호
+들여쓰기
+순서번호
+작성일
+글쓴이(별명)
+사진
+글내용
+가격
+추천
+비추천
+
+create table re(
+itemno int,
+re_num int,
+re_ref int,
+re_lev int,
+re_seq int,
+re_date datetime,
+re_name varchar(20),
+re_img varchar(50),
+re_info varchar(3000),
+re_price int,
+re_up int,
+re_down int
+);
+
+// 일반 댓글은 자신의 글번호를 그룹번호로 가짐
+
+
+상품번호,댓글번호,그룹번호,들여쓰기,순서번호
+INSERT INTO re VALUES(1,1,1,0,0,now(),'강감찬','avante.jpg','가나다123123라31마바사아',10000,3,4);
+INSERT INTO re VALUES(1,2,2,0,0,now(),'이순신','carens.jpg','가나다3라마바사아123213',10000,3,4);
+INSERT INTO re VALUES(1,3,3,0,0,now(),'이순신','canival.jpg','가나다라마바12312사아',10000,3,4);
+INSERT INTO re VALUES(1,4,4,0,0,now(),'메시','equus.jpg','가나다라3123마바사아',10000,3,4);
+INSERT INTO re VALUES(1,5,5,0,0,now(),'아자르','equus.jpg','테스트 순서1',10000,3,4);
+INSERT INTO re VALUES(1,6,5,1,4,now(),'네이마르','equus.jpg','테스트 순서2',10000,3,4);
+INSERT INTO re VALUES(1,7,4,1,1,now(),'캉테','equus.jpg','테스트 순서3',10000,3,4);
+INSERT INTO re VALUES(1,8,5,2,9,now(),'포그바','equus.jpg','가나다라3123마바사아',10000,3,4);
+INSERT INTO re VALUES(1,9,5,2,5,now(),'강감찬','avante.jpg','가나다123123라31마바사아',10000,3,4);
+INSERT INTO re VALUES(1,10,5,3,6,now(),'이순신','carens.jpg','가나다3라마바사아123213',10000,3,4);
+INSERT INTO re VALUES(1,11,5,4,8,now(),'이순신','canival.jpg','가나다라마바12312사아',10000,3,4);
+INSERT INTO re VALUES(1,12,5,1,2,now(),'메시','equus.jpg','가나다라3123마바사아',10000,3,4);
+INSERT INTO re VALUES(1,13,5,1,1,now(),'아자르','equus.jpg','테스트 순서1',10000,3,4);
+INSERT INTO re VALUES(1,14,5,4,7,now(),'네이마르','equus.jpg','테스트 순서2',10000,3,4);
+INSERT INTO re VALUES(1,15,5,2,3,now(),'캉테','equus.jpg','테스트 순서3',10000,3,4);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

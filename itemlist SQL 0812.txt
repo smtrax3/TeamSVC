@@ -1,0 +1,49 @@
+글번호
+작성자
+글제목
+글비밀번호
+작성일
+조회수
+상품분류(A,B,C)
+상품명
+상품가격
+상품정보
+상품이미지명
+
+
+create table itemlist(
+num int,
+nickname varchar(20),
+subject varchar(50),
+pwd varchar(20),
+date datetime ,
+readcount int,
+itemcategory varchar(20),
+itemname varchar(20),
+itemprice int,
+iteminfo varchar(2000),
+itemimg varchar(50)
+);
+
+INSERT INTO itemlist VALUES(1,'홍길동','진품명품1','1111',NOW(),10,'A','아반테',5000,'이차량은 소형차량으로 잘나갑니다.','avante.jpg');
+INSERT INTO itemlist VALUES(2,'홍길동','진품명품2','1111',NOW(),5,'A','카렌스',6000,'이차량은 소형차량으로 잘나갑니다.','carens.jpg');
+INSERT INTO itemlist VALUES(3,'홍길동','진품명품3','1111',NOW(),6,'A','카니발',7000,'이차량은 소형차량으로 잘나갑니다.','canival.jpg');
+INSERT INTO itemlist VALUES(4,'홍길동','진품명품4','1111',NOW(),2,'A','코란도',8000,'이차량은 소형차량으로 잘나갑니다.','co.jpg');
+INSERT INTO itemlist VALUES(5,'홍길동','진품명품5','1111',NOW(),100,'B','에쿠스',10000,'이차량은 중형차량으로 잘나갑니다.','equus.jpg');
+INSERT INTO itemlist VALUES(6,'홍길동','진품명품6','1111',NOW(),102,'B','그렌져',11000,'이차량은 중형차량으로 잘나갑니다.','grandeur.jpg');
+INSERT INTO itemlist VALUES(7,'홍길동','진품명품7','1111',NOW(),102,'B','k3',12000,'이차량은 중형차량으로 잘나갑니다.','k3.jpg');
+INSERT INTO itemlist VALUES(8,'홍길동','진품명품8','1111',NOW(),1660,'B','k5',13000,'이차량은 중형차량으로 잘나갑니다.','k5.jpg');
+INSERT INTO itemlist VALUES(9,'홍길동','진품명품9','1111',NOW(),105,'C','k7',21000,'이차량은 대형차량으로 잘나갑니다.','k7.jpg');
+INSERT INTO itemlist VALUES(10,'홍길동','진품명품10','1111',NOW(),1230,'C','k9',22000,'이차량은 대형차량으로 잘나갑니다.','k9.jpg');
+INSERT INTO itemlist VALUES(11,'홍길동','진품명품11','1111',NOW(),1430,'C','말리부',23000,'이차량은 대형차량으로 잘나갑니다.','malibu.jpg');
+INSERT INTO itemlist VALUES(12,'홍길동','진품명품12','1111',NOW(),330,'C','BMW',2400,'이차량은 대형차량으로 잘나갑니다.','bmw.jpg');
+INSERT INTO itemlist VALUES(17,'홍길동','진품명품12','1111',NOW(),130,'C','BMW',24000,'이차량은 대형차량으로 잘나갑니다.','bmw.jpg');
+
+
+
+
+
+
+
+
+
